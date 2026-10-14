@@ -317,6 +317,53 @@
 				<text x="400" y="475" text-anchor="middle" fill="#354b37" font-size="24" font-family="Georgia, 'Times New Roman', serif">Welcome to our garden</text>
 			</svg>
 		</figure>
+
+			<figure id="scene-grouped-figure">
+				<figcaption>Grouped windows scene (Step 4)</figcaption>
+				<svg id="scene-grouped" viewBox="0 0 800 500" role="img" aria-labelledby="scene-grouped-title scene-grouped-desc" xmlns="http://www.w3.org/2000/svg">
+					<title id="scene-grouped-title">House and garden with grouped windows</title>
+					<desc id="scene-grouped-desc">The original sunny house and garden scene, with both windows drawn from one reusable grouped definition.</desc>
+
+					<defs>
+						<!-- Grouping keeps the matching window frame and mullions reusable. -->
+						<g id="window">
+							<rect x="0" y="0" width="70" height="58" fill="#bfe6f2" stroke="#80563a" stroke-width="4" />
+							<line x1="35" y1="0" x2="35" y2="58" stroke="#80563a" stroke-width="3" />
+							<line x1="0" y1="29" x2="70" y2="29" stroke="#80563a" stroke-width="3" />
+						</g>
+					</defs>
+
+					<rect x="0" y="0" width="800" height="320" fill="#bfe6f2" />
+					<rect x="0" y="320" width="800" height="180" fill="#91c978" />
+
+					<circle cx="690" cy="88" r="42" fill="#ffd35a" />
+					<ellipse cx="160" cy="105" rx="48" ry="25" fill="#fffdf5" />
+					<circle cx="130" cy="108" r="24" fill="#fffdf5" />
+					<circle cx="183" cy="91" r="30" fill="#fffdf5" />
+
+					<rect x="90" y="250" width="24" height="92" fill="#80563a" />
+					<circle cx="102" cy="218" r="54" fill="#4c9b5d" />
+					<circle cx="70" cy="238" r="35" fill="#5eaa68" />
+					<circle cx="132" cy="239" r="37" fill="#438d53" />
+
+					<rect x="275" y="215" width="270" height="180" fill="#f4d7a1" stroke="#80563a" stroke-width="3" />
+					<polygon points="250,220 410,105 570,220" fill="#bd5545" stroke="#804033" stroke-width="4" />
+					<rect x="455" y="135" width="42" height="72" fill="#a64b3c" stroke="#804033" stroke-width="3" />
+
+					<!-- Translations place each window at its original top-left coordinate. -->
+					<use href="#window" transform="translate(310, 250)" />
+					<use href="#window" transform="translate(445, 250)" />
+
+					<rect x="390" y="310" width="62" height="85" fill="#80563a" />
+					<circle cx="438" cy="352" r="4" fill="#ffd35a" />
+
+					<polyline points="35,350 35,300 75,300 75,350 115,350 115,300 155,300 155,350 195,350 195,300 235,300 235,350 275,350 275,300 315,300 315,350 355,350 355,300 395,300 395,350 435,350 435,300 475,300 475,350 515,350 515,300 555,300 555,350 595,350 595,300 635,300 635,350 675,350 675,300 715,300 715,350 765,350" fill="none" stroke="#f5f0d0" stroke-width="7" stroke-linejoin="round" />
+					<line x1="25" y1="350" x2="775" y2="350" stroke="#80563a" stroke-width="5" />
+
+					<path d="M 420 395 C 390 425, 345 445, 300 500 L 535 500 C 490 455, 455 425, 445 395 Z" fill="#d9bd8b" />
+					<text x="400" y="475" text-anchor="middle" fill="#354b37" font-size="24" font-family="Georgia, 'Times New Roman', serif">Welcome to our garden</text>
+				</svg>
+			</figure>
 	</main>
 </body>
 </html>
