@@ -297,8 +297,11 @@
 					<circle cx="438" cy="352" r="4" fill="#ffd35a" />
 				</g>
 
-				<polyline class="fence" points="35,350 35,300 75,300 75,350 115,350 115,300 155,300 155,350 195,350 195,300 235,300 235,350 275,350 275,300 315,300 315,350 355,350 355,300 395,300 395,350 435,350 435,300 475,300 475,350 515,350 515,300 555,300 555,350 595,350 595,300 635,300 635,350 675,350 675,300 715,300 715,350 765,350" fill="none" stroke="#f5f0d0" stroke-width="7" stroke-linejoin="round" />
-				<line class="fence-rail" x1="25" y1="350" x2="775" y2="350" stroke="#80563a" stroke-width="5" />
+				<!-- Split the fence at the house edges to clear its facade, door, and path. -->
+				<polyline class="fence" points="35,350 35,300 75,300 75,350 115,350 115,300 155,300 155,350 195,350 195,300 235,300 235,350" fill="none" stroke="#f5f0d0" stroke-width="7" stroke-linejoin="round" />
+				<polyline class="fence" points="555,350 555,300 595,300 595,350 635,350 635,300 675,300 675,350 715,350 715,300 765,300 765,350" fill="none" stroke="#f5f0d0" stroke-width="7" stroke-linejoin="round" />
+				<line class="fence-rail" x1="25" y1="350" x2="235" y2="350" stroke="#80563a" stroke-width="5" />
+				<line class="fence-rail" x1="555" y1="350" x2="775" y2="350" stroke="#80563a" stroke-width="5" />
 
 				<path d="M 420 395 C 390 425, 345 445, 300 500 L 535 500 C 490 455, 455 425, 445 395 Z" fill="#d9bd8b" />
 				<!-- Add a curved stone walk from the shifted door into the garden. -->
